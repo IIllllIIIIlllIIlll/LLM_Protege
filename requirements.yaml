@@ -1,0 +1,28 @@
+name: protege
+channels:
+  - nvidia # need to specify this as first channel to go grab the dependencies of pytorch-cuda correctly
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11.3
+  - conda
+  - pip
+  - pytorch::pytorch>=2.2.0 # use pytorch channel
+  - pytorch::pytorch-cuda=12.1 # Remove this line if your hardware does not support cuda, otherwise it will create conflicts
+  - numpy
+  - scipy
+  - pip:
+    - transformers
+    - tokenizers
+    - accelerate
+    - huggingface-hub
+    - optimum
+    - fastapi==0.112.2
+    - gradio==4.21.0
+    - bitsandbytes
+    - sentencepiece
+    - protobuf
+    - tiktoken
+    - langchain
+    - pypdf
+    - gradio_pdf
