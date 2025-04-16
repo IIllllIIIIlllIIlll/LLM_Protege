@@ -17,12 +17,9 @@ dependencies:
     - accelerate
     - huggingface-hub
     - optimum
-    - fastapi==0.112.2
-    - gradio==4.21.0
+    - fastapi
+    - gradio
     - bitsandbytes
     - sentencepiece
     - protobuf
     - tiktoken
-    - langchain
-    - pypdf
-    - gradio_pdf
